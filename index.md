@@ -5,13 +5,11 @@ title: Home
 
 # Welcome to My GitHub Pages Site
 
-This is my personal page where I upload replication code using PyTorch and write learning notes and critical thinking. hello
+This is my personal page where I upload replication code using PyTorch and write learning notes and critical thinking.
 
 ![Profile Picture](images/profile.jpg)
 
 ## Links
 
-- [Notes](notes.md)
-- [Projects](projects.md)
-- [GitHub Profile](https://github.com/myang13ff14)
+- [GitHub](https://github.com/myang13ff14)
 
