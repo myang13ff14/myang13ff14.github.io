@@ -3,7 +3,7 @@ layout: default
 title: Notes
 ---
 
-# Notes
+# Learning Notes
 
 Here are my learning notes:
 
