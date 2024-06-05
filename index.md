@@ -7,7 +7,9 @@ title: Home
 
 This is my personal page where I upload replication code using PyTorch and write learning notes and critical thinking.
 
-![Profile Picture](images/profile.jpg)
+<!-- Use HTML to insert the image and control its size -->
+<img src="{{ site.baseurl }}/images/profile.jpg" alt="Profile Picture" class="profile-image">
+
 
 ## Links
 
