@@ -43,14 +43,13 @@ class KMeans():
 ```
 ## Explanation
 
-Below is the implementation of K-means clustering using PyTorch. We randomly select `n_clusters` data points as initial centroids using `torch.randperm`. The indices of these data points will serve as the names of the clusters, with each cluster named according to its index.
+We randomly select `n_clusters` data points as initial centroids using `torch.randperm`. The indices of these data points will serve as the names of the clusters, with each cluster named according to its index.
 
 ```python
 index = torch.randperm(len(x))[:self.n_clusters]
 self.centroids = x[index]
 ```
-The `_compute_distance` method calculates the distance between each data point and the centroids using `torch.cdist`, which computes the pairwise distances between two sets of vectors.
-assign each datapoint to the nearest centroid using `torch.argmin` across the last dimension
+The `_compute_distance` method calculates the distance between each data point and the centroids using `torch.cdist`, which computes the pairwise distances between two sets of vectors. Each datapoint is assigned to the nearest centroid using `torch.argmin` across the last dimension
 
 The `predict` method is a wrapper for the `fit` method, allowing the model to be used to assign clusters to new data points.
 

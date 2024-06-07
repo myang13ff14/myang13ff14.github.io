@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Deep Dive
+title: Build from Scratch
 ---
 
-# Deep Dive
+# Build from Scratch
 
-Here, you will find a collection of my personally rewritten and deeply analyzed code implementations for various statistical and AI models. By delving into the theoretical foundations and practical applications, I aim to offer a unique perspective on these models, highlighting their strengths, nuances, and potential improvements.
+In this section, you will find my journey of building simple yet fundamental models from scratch using PyTorch.
 
 - [K-means](codes/k_means.md)
 
