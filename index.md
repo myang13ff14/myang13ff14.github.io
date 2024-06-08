@@ -19,5 +19,6 @@ Although I am making rapid progress, there remains much to learn. I am committed
 
 ## Links
 
-- [GitHub](https://github.com/myang13ff14)
+- [Linkedin](https://www.linkedin.com/in/myang13/)
+
 
