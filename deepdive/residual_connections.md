@@ -41,7 +41,7 @@ class CustomDeepNetwork(nn.Module):
         return x
 
 # Define the sizes of each layer
-layer_sizes = [3,3,3,3,3,3,3,3,3,3,3,3,3,31]
+layer_sizes = [3,3,3,3,3,3,3,3,3,3,3,3,3,1]
 # Initialize the model with residual connections
 model_with_residual = CustomDeepNetwork(layer_sizes, use_residual=True)
 model_without_residual = CustomDeepNetwork(layer_sizes, use_residual=False)
@@ -72,19 +72,19 @@ display_gradients(model_with_residual, sample_input)
 ```
 
 ``` css
-Mean absolute gradient of layers.0.0.weight: 7.344178199768066
-Mean absolute gradient of layers.1.0.weight: 8.662698745727539
-Mean absolute gradient of layers.2.0.weight: 13.765417098999023
-Mean absolute gradient of layers.3.0.weight: 7.862175941467285
-Mean absolute gradient of layers.4.0.weight: 8.265609741210938
-Mean absolute gradient of layers.5.0.weight: 2.184358835220337
-Mean absolute gradient of layers.6.0.weight: 7.696049213409424
-Mean absolute gradient of layers.7.0.weight: 7.910844802856445
-Mean absolute gradient of layers.8.0.weight: 3.925398826599121
-Mean absolute gradient of layers.9.0.weight: 4.45281457901001
-Mean absolute gradient of layers.10.0.weight: 9.0689697265625
-Mean absolute gradient of layers.11.0.weight: 5.701756000518799
-Mean absolute gradient of layers.12.0.weight: 1.750020980834961
+Mean absolute gradient of layers.0.0.weight: 0.015456237830221653
+Mean absolute gradient of layers.1.0.weight: 0.0082783168181777
+Mean absolute gradient of layers.2.0.weight: 0.01303770300000906
+Mean absolute gradient of layers.3.0.weight: 0.00975505169481039
+Mean absolute gradient of layers.4.0.weight: 0.004205979872494936
+Mean absolute gradient of layers.5.0.weight: 0.003670105943456292
+Mean absolute gradient of layers.6.0.weight: 0.03035895712673664
+Mean absolute gradient of layers.7.0.weight: 0.03344191983342171
+Mean absolute gradient of layers.8.0.weight: 0.045371200889348984
+Mean absolute gradient of layers.9.0.weight: 0.0
+Mean absolute gradient of layers.10.0.weight: 0.026721157133579254
+Mean absolute gradient of layers.11.0.weight: 6.576962186954916e-05
+Mean absolute gradient of layers.12.0.weight: 0.42710962891578674
 ```
 
 ```python
@@ -92,19 +92,19 @@ display_gradients(model_without_residual, sample_input)
 ```
 
 ```css
-Mean absolute gradient of layers.0.0.weight: 7.344178199768066
-Mean absolute gradient of layers.1.0.weight: 8.662698745727539
-Mean absolute gradient of layers.2.0.weight: 13.765417098999023
-Mean absolute gradient of layers.3.0.weight: 7.862175941467285
-Mean absolute gradient of layers.4.0.weight: 8.265609741210938
-Mean absolute gradient of layers.5.0.weight: 2.184358835220337
-Mean absolute gradient of layers.6.0.weight: 7.696049213409424
-Mean absolute gradient of layers.7.0.weight: 7.910844802856445
-Mean absolute gradient of layers.8.0.weight: 3.925398826599121
-Mean absolute gradient of layers.9.0.weight: 4.45281457901001
-Mean absolute gradient of layers.10.0.weight: 9.0689697265625
-Mean absolute gradient of layers.11.0.weight: 5.701756000518799
-Mean absolute gradient of layers.12.0.weight: 1.750020980834961
+Mean absolute gradient of layers.0.0.weight: 1.3087806394196377e-08
+Mean absolute gradient of layers.1.0.weight: 4.8706940702913926e-09
+Mean absolute gradient of layers.2.0.weight: 9.519102839306015e-09
+Mean absolute gradient of layers.3.0.weight: 4.560284949661764e-08
+Mean absolute gradient of layers.4.0.weight: 1.5104563999557286e-07
+Mean absolute gradient of layers.5.0.weight: 6.48931120394991e-07
+Mean absolute gradient of layers.6.0.weight: 4.181424628768582e-06
+Mean absolute gradient of layers.7.0.weight: 6.420085355784977e-06
+Mean absolute gradient of layers.8.0.weight: 1.6240186596405692e-05
+Mean absolute gradient of layers.9.0.weight: 0.00020436437625903636
+Mean absolute gradient of layers.10.0.weight: 0.00020677836437243968
+Mean absolute gradient of layers.11.0.weight: 0.0010400100145488977
+Mean absolute gradient of layers.12.0.weight: 0.01473889872431755
 ```
 
 In our experiments with `CustomDeepNetwork`, we observed that the vanishing gradient problem is more pronounced in models without residual connections compared to those with residual connections. This phenomenon can be attributed to the way gradients are propagated through layers during backpropagation in standard deep networks. Without residual connections, the gradients are sequentially multiplied through many layers. When small gradients are multiplied together, they can diminish exponentially, leading to the vanishing gradient problem.
