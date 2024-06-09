@@ -112,18 +112,6 @@ In our experiments with `CustomDeepNetwork`, we observed that the vanishing grad
 Residual connections introduce skip connections or shortcuts that enable gradients to bypass certain layers during backpropagation. This mechanism significantly mitigates the vanishing gradient problem.
 
 
-Compare the differences:
-
-$$L(x) = f(g(x))$$
-
-$$\dfrac{dL}{dx} = df/dg \times dg/dx$$
-
-$$L(x) = f(g(x)) + x$$
-
-$$\dfrac{dL}{dx} = df/dg \times dg/dx + 1$$
-
-By adding a residual link, we are actually adding 1 directly to the equation.
-
 Interestingly, our experiments with `CustomDeepNetwork` also revealed that increasing the width of each layer can help alleviate the vanishing gradient problem to some extent.
 
 Let's explore the following setup further:
@@ -156,3 +144,13 @@ Mean absolute gradient of layers.6.0.weight: 0.0004158136434853077
 ```
 
 It seems that the effect of the residual link has disappeared.
+
+## My understanding of Residual Links and Vanishing Gradient Problem
+
+Currently, most explanations of how residual links work involve the function `f(x)+x` and its derivative with respect to `x`. However, I don't see how this relates to why residual links improve results.
+
+The fundamental problem of the vanishing gradient is that you have a very small gradient with respect to certain parameters. This means your loss function is relatively flat in those directions, making the optimization procedure extremely difficult. In numerical analysis, we generally avoid flat-bottom shapes of the loss function.
+
+Furthermore, the explanation using `f(x)+x` is unconvincing to me because we are taking the derivative with respect to the weights, not the data itself. In my opinion, adding `x` can make things easier because the function `F(f(x)+x)`may include an extra term `x`. When taking the derivative at the `F` level, this extra term can make `dF` larger, thus increasing the product of the derivatives.
+
+I believe residual links can improve results and mitigate the vanishing gradient problem, but they do not solve it completely.
