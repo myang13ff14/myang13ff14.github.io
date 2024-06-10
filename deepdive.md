@@ -5,4 +5,4 @@ title: Deep Dive
 
 # Deep Dive
 
-- [Residual Connections](deepdive/residual_connections.md)
+- [Residual Connections](deepdive/residual_connections.html)
