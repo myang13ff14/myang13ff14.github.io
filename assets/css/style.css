@@ -86,15 +86,13 @@ pre code {
 
 .profile {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;  /* Align items at the top */
   margin: 20px;
 }
 
 .profile-pic {
-  width: 150px;  /* Adjust the size as needed */
-  height: auto;
-  border-radius: 50%;  /* Make it a circle if you want */
+  width: 200px;  /* Adjust the width as needed */
+  height: 300px;  /* Adjust the height as needed */
   margin-right: 20px;  /* Space between image and text */
 }
 
@@ -103,13 +101,15 @@ pre code {
 }
 
 /* Additional styles for responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .profile {
     flex-direction: column;
     text-align: center;
   }
 
   .profile-pic {
+    width: 100%;  /* Full width for smaller screens */
+    height: auto;  /* Maintain aspect ratio */
     margin-right: 0;
     margin-bottom: 20px;
   }
