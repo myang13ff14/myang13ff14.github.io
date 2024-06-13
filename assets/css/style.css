@@ -90,10 +90,13 @@ pre code {
   margin: 20px;
 }
 
+
 .profile-pic {
-  width: 200px;  /* Adjust the width as needed */
-  height: 300px;  /* Adjust the height as needed */
-  margin-right: 20px;  /* Space between image and text */
+  float: left;
+  max-width: 200px; /* Adjust the max width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and text */
+  margin-bottom: 10px; /* Space at the bottom to prevent overlap with text */
 }
 
 .profile-text {
@@ -102,19 +105,14 @@ pre code {
 
 /* Additional styles for responsiveness */
 @media (max-width: 800px) {
-  .profile {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .profile-pic {
-    width: 100%;  /* Full width for smaller screens */
-    height: auto;  /* Maintain aspect ratio */
-    margin-right: 0;
-    margin-bottom: 20px;
+    float: none;
+    display: block;
+    margin: 0 auto 20px; /* Center image and add bottom margin */
   }
 
   .profile-text {
     max-width: 100%;
+    text-align: center;
   }
 }
