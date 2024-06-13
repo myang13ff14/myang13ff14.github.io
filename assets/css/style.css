@@ -45,6 +45,10 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+p {
+    text-align: justify;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
