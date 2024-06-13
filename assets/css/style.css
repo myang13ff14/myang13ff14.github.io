@@ -77,38 +77,15 @@ pre code {
     font-size: 14px;
 }
 
+img {
+    float: left;
+    margin: 10px;
+        }
+
 /*.profile-image {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-} */
+}*/
 
-.profile {
-  margin: 20px;
-}
-
-.profile-pic {
-  float: left;
-  max-width: 200px; /* Adjust the max width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Space between image and text */
-  margin-bottom: 10px; /* Space at the bottom to prevent overlap with text */
-}
-
-.profile h1, .profile p {
-  display: block;
-  overflow: hidden; /* Ensure the text wraps around the floating image */
-}
-
-@media (max-width: 800px) {
-  .profile-pic {
-    float: none;
-    display: block;
-    margin: 0 auto 20px; /* Center image and add bottom margin */
-  }
-
-  .profile {
-    text-align: center;
-  }
-}
