@@ -94,7 +94,7 @@ pre code {
 
 .profile-pic {
   float: left;
-  width: 150px; /* Adjust the width as needed */
+  width: 30%; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-right: 20px; /* Space between image and text */
   margin-bottom: 10px; /* Space at the bottom to prevent overlap with text */
