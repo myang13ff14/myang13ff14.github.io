@@ -6,10 +6,9 @@ title: Home
 
 
 <div class="profile">
-  <img src="{{ site.baseurl }}/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-  <div class="profile-text">
     <h1>Welcome to my Github Page!</h1>
     <p>
+  <img src="{{ site.baseurl }}/images/profile.jpg" alt="Profile Picture" class="profile-pic">
 	I am driven by a deep passion for developing innovative AI-driven solutions that have a tangible impact on the industry. My robust background in traditional statistics, including a Ph.D. from North Carolina State University (NCSU), provides me with a solid foundation in the theory behind AI technologies. This foundation includes understanding fundamental concepts, such as quickly understanding the logic of applying frequency domain information to time series using transformer structures (Timesnet), and utilizing low-rank matrix approximations in the logic of LoRA. With a strong background in traditional statistics and modern AI technologies, I am eager to contribute significantly to the field and look forward to applying my knowledge in impactful ways.
 	</p>
 	<p>
@@ -25,7 +24,6 @@ title: Home
 	Although I am making rapid progress, there remains much to learn. I am committed to forging ahead with determination and enthusiasm. 
 	</p>
     
-  </div>
 </div>
 
 
