@@ -85,11 +85,8 @@ pre code {
 } */
 
 .profile {
-  display: flex;
-  align-items: flex-start;  /* Align items at the top */
   margin: 20px;
 }
-
 
 .profile-pic {
   float: left;
@@ -99,11 +96,11 @@ pre code {
   margin-bottom: 10px; /* Space at the bottom to prevent overlap with text */
 }
 
-.profile-text {
-  max-width: 600px;  /* Adjust as needed */
+.profile h1, .profile p {
+  display: block;
+  overflow: hidden; /* Ensure the text wraps around the floating image */
 }
 
-/* Additional styles for responsiveness */
 @media (max-width: 800px) {
   .profile-pic {
     float: none;
@@ -111,8 +108,7 @@ pre code {
     margin: 0 auto 20px; /* Center image and add bottom margin */
   }
 
-  .profile-text {
-    max-width: 100%;
+  .profile {
     text-align: center;
   }
 }
