@@ -7,8 +7,9 @@ title: Home
 # Welcome to my Github Page!
 
 <div class="profile">
-	  <img src="{{ site.baseurl }}/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-	I am driven by a deep passion for developing innovative AI-driven solutions that have a tangible impact on the industry. My robust background in traditional statistics, including a Ph.D. from North Carolina State University (NCSU), provides me with a solid foundation in the theory behind AI technologies. This foundation includes understanding fundamental concepts, such as quickly understanding the logic of applying frequency domain information to time series using transformer structures (Timesnet), and utilizing low-rank matrix approximations in the logic of LoRA. With a strong background in traditional statistics and modern AI technologies, I am eager to contribute significantly to the field and look forward to applying my knowledge in impactful ways. <br>
+	<p>
+			  <img src="{{ site.baseurl }}/images/profile.jpg" alt="Profile Picture" class="profile-pic">
+		I am driven by a deep passion for developing innovative AI-driven solutions that have a tangible impact on the industry. My robust background in traditional statistics, including a Ph.D. from North Carolina State University (NCSU), provides me with a solid foundation in the theory behind AI technologies. This foundation includes understanding fundamental concepts, such as quickly understanding the logic of applying frequency domain information to time series using transformer structures (Timesnet), and utilizing low-rank matrix approximations in the logic of LoRA. With a strong background in traditional statistics and modern AI technologies, I am eager to contribute significantly to the field and look forward to applying my knowledge in impactful ways. </p>
 	<p>
 	While my career initially focused on traditional statistical analysis and model development, I recognized the immense potential of modern AI models. I am expanding my expertise into computer vision (CV), natural language processing (NLP), and time series analysis. Advances in computing power have made brute-force approaches feasible, unleashing the potential of modern deep neural networks. I have quickly and deeply learned to leverage the powerful attention mechanisms of transformer architecture. </p>
 	<p>
