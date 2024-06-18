@@ -153,7 +153,8 @@ plt.scatter(x=X[:, 0],
 
 
     
-![png](../images/output_5_0.png)
+<!-- ![png](../images/output_5_0.png) -->
+<img src="{{ site.baseurl }}/images/output_5_0.jpg" class="md-image">
     
 
 
@@ -274,7 +275,8 @@ plt.scatter(x=X_test[:, 0].cpu().detach(),
 
 
     
-![png](../images/output_13_0.png)
+<!-- ![png](../images/output_13_0.png) -->
+<img src="{{ site.baseurl }}/images/output_13_0.jpg" class="md-image">
     
 
 
@@ -378,7 +380,8 @@ plot_decision_boundary(model_0, X_test, y_test)
 
 
     
-![png](../images/output_18_0.png)
+<!-- ![png](../images/output_18_0.png) -->
+<img src="{{ site.baseurl }}/images/output_18_0.jpg" class="md-image">
     
 
 
@@ -444,7 +447,8 @@ y = torch.from_numpy(y).type(torch.long).to(device)
 
 
     
-![png](../images/output_20_0.png)
+<!-- ![png](../images/output_20_0.png) -->
+<img src="{{ site.baseurl }}/images/output_20_0.jpg" class="md-image">
     
 
 
@@ -504,7 +508,8 @@ plot_decision_boundary(model_1, X_test, y_test)
 
 
     
-![png](../images/output_23_0.png)
+<!-- ![png](../images/output_23_0.png) -->
+<img src="{{ site.baseurl }}/images/output_23_0.jpg" class="md-image">
     
 
 
