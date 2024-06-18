@@ -9,4 +9,6 @@ In this section, you will find my journey of building simple yet fundamental mod
 
 - [K-means](codes/k_means.md)
 - [Classification](codes/classification.md)
+- [Simple Linear Regression](codes/simple_linear_regression.html)
+
 

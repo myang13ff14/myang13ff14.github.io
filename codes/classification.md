@@ -1,3 +1,7 @@
+---
+layout: default
+title: Basic Classification Problem
+---
 
 # Basic Classification Problem
 
