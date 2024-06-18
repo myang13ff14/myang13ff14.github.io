@@ -1,5 +1,5 @@
 
-# Basic Classification Problem:
+# Basic Classification Problem
 
 In this notebook, I will present simple code snippets using PyTorch to solve classification problems. These examples are designed to serve as a toolbox for tackling real-world classification tasks. By providing straightforward implementations for both binary and multi-class classification, this notebook aims to achieve a quick adaptation of models to various datasets and business requirements. The code includes basic neural network architectures, loss functions, and training routines, which can be easily modified and expanded to meet specific needs.
 
