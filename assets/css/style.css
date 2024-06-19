@@ -82,7 +82,7 @@ pre code {
 }
 
 .md-image {
-  max-width: 150px; /* Adjust the max width as needed */
+  max-width: 100%; /* Adjust the max width as needed */
   height: auto; /* Maintain aspect ratio */
   float: center;
   margin-right: 20px; /* Space between image and text */
