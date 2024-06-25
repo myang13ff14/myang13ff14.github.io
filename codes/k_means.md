@@ -3,7 +3,7 @@ layout: default
 title: K-means Clustering from Scratch
 ---
 
-# Build k-means Clustering from Scratch
+# Build K-means Clustering from Scratch
 
 ## Introduction
 
