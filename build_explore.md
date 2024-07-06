@@ -16,6 +16,6 @@ In this section, you will find my journey of building simple yet fundamental mod
 In this section, I will post my exploration of various concepts in deep learning.
 
 - [Residual Connections](deepdive/ResidualConnections.html)
-- [Bert](deepdive/Bert.html)
+- [Bert](deepdive/BERT.html)
 
 
