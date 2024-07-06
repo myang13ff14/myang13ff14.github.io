@@ -1076,7 +1076,7 @@ body .markdown-body
 .highlight .vi{color:teal}
 .highlight .il{color:#009999}
 .highlight .gc{color:#999;background-color:#EAF2F5}
-</style><title>BertNotes</title></head><body><article class="markdown-body"><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+</style><title>Bert</title></head><body><article class="markdown-body"><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -1093,10 +1093,7 @@ body .markdown-body
   mermaid.initialize({ startOnLoad: true });
 </script>
 
-<hr />
-<p>layout: default
-title: BERT Reading Notes</p>
-<hr />
+
 <h1 id="bert-reading-notes">BERT Reading Notes<a class="headerlink" href="#bert-reading-notes" title="Permanent link"></a></h1>
 <p>BERT (Bidirectional Encoder Representations from Transformers) is the language model based on the encoder part of the transformer architecture. BERT was introduced by Google AI in 2018. It utilizes bidirectional self-attention, allowing it to compute attention from both directions simultaneously. This bidirectional approach enables BERT to capture context from both the left and right sides of a given word, resulting in a more comprehensive understanding of the language. BERT&rsquo;s ability to learn context represents a significant improvement over word2vec, in which the meanings of words are fixed once trained.</p>
 <p>BERT is trained using two main tasks: the Masked Language Model (MLM) and the Next Sentence Prediction (NSP). In the MLM task, 15% of the words in a sentence are randomly masked, and the model is trained to predict the masked words. In the NSP task, BERT is trained to determine if one sentence should logically follow another sentence.</p>
