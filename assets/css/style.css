@@ -128,7 +128,7 @@ pre code {
     .link-section p {
         margin: 0;  /* Remove margin from paragraph */
         padding-bottom: 2px;  /* Add slight padding to ensure text isn't too close */
-        font-size: 5px;
+        font-size: 7px;
     }
     .link-section a {
         color: blue;
