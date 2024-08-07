@@ -7,8 +7,6 @@ title: Build from Scratch
 
 In this section, you will find my journey of building simple yet fundamental models from scratch using PyTorch.
 
-- [K-means](codes/k_means.md)
-- [Classification](codes/classification.md)
-- [Simple Linear Regression](codes/simple_linear_regression.html)
-
-
+- [K-means](build/k_means.md)
+- [Classification](build/classification.md)
+- [Simple Linear Regression](build/simple_linear_regression.html)
