@@ -121,4 +121,21 @@ pre code {
   .profile {
     text-align: center;
   }
+
+    .link-section {
+        margin-bottom: 10px;  /* Reduce margin between sections */
+    }
+    .link-section p {
+        margin: 0;  /* Remove margin from paragraph */
+        padding-bottom: 2px;  /* Add slight padding to ensure text isn't too close */
+    }
+    .link-section a {
+        color: blue;
+        text-decoration: none;
+        display: inline-block;  /* Ensure the link is treated as an inline element */
+        margin-top: 2px;  /* Add slight margin above the link */
+    }
+    .link-section a:hover {
+        text-decoration: underline;
+
 }
